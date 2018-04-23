@@ -4,11 +4,16 @@ import Styled from "styled-components";
 import { connect } from "react-redux";
 import { fetchItems } from "./actions";
 import { Filters, Items } from "./components";
+import { media } from "@/ui";
 
 const StyledList = Styled.div`
   display: flex;
   flex-direction: row;
   flex: 1 1 auto;
+  
+  ${media.tabletAndSmaller`
+    flex-direction: column;
+  `}
 `;
 
 class ListView extends PureComponent {

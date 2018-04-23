@@ -13,7 +13,7 @@ export default {
   viewPhablet: "480px",
   viewTablet: "800px",
   viewLaptop: "994px",
-  viewDesktop: "1364px",
+  viewDesktop: "1024px",
 
   gray100: "#ffffff",
   gray90: "#f9f9f9",

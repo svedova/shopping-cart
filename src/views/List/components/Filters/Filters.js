@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Styled from "styled-components";
 import { connect } from "react-redux";
-import { props, Dropdown } from "@/ui";
+import { props, Dropdown, media } from "@/ui";
 import { setFilter, resetFilters } from "@/views/List/actions";
 import "react-dropdown/style.css";
 
@@ -11,10 +11,18 @@ const StyledFilters = Styled.div`
   min-width: 250px;
   padding: ${props.paddingM};
   margin-right: ${props.marginL};
+  
+  ${media.tabletAndSmaller`
+    margin-bottom: ${props.marginXL};
+  `}
 `;
 
 const Row = Styled.div`
   margin-bottom: ${props.marginXL};
+  
+  ${media.tabletAndSmaller`
+    margin-bottom: ${props.marginM};
+  `}
   
   &:last-child {
     margin-bottom: 0;

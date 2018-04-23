@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Styled, { css, keyframes } from "styled-components";
 import { connect } from "react-redux";
 import { addToCart } from "@/views/Cart/actions";
-import { props } from "@/ui";
+import { props, media } from "@/ui";
 import {
   Price,
   PriceWrapper,
@@ -100,7 +100,7 @@ const StyledItem = Styled.div`
   box-shadow: ${props.shadowS};
   display: block;
   height: 250px;
-  width: 32%;
+  width: 242px;
   margin-right: 2%;
   margin-bottom: ${props.marginL};
   transition: ${transition};
@@ -114,6 +114,15 @@ const StyledItem = Styled.div`
   }
   
   ${p => (p.isPlaceholder ? placeholder : nonPlaceholder)}
+  
+  ${media.desktopAndSmaller`
+    width: 200px;
+    
+    &:nth-child(3n) {
+      margin-right: 2%;
+    }
+  `}
+  
 `;
 
 const NumberOfItems = Styled.span`

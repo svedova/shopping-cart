@@ -3,11 +3,16 @@ import PropTypes from "prop-types";
 import Styled from "styled-components";
 import { connect } from "react-redux";
 import Item from "../Item";
+import { media } from "@/ui";
 
 const StyledItems = Styled.div`
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
+  
+  ${media.tabletAndSmaller`
+    justify-content: center;
+  `}
 `;
 
 class Items extends PureComponent {
