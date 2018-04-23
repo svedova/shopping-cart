@@ -30,6 +30,10 @@ Also, to prevent `../../using/relative/paths/like/this` I added a module alias t
 
 Used `prettier` to ensure consistency in coding style.
 
+## Redux DevTools
+
+If you run the project in development mode, you will see that there is a warning on bottom right of the screen. Basically, it tells you how to toggle the redux monitoring tools. 
+
 ## Unit Tests
 This project includes two example unit tests. These unit tests can be found
 under: 
