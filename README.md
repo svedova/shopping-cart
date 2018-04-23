@@ -20,11 +20,15 @@ Once installed you can visit [here](http://localhost:3000).
 This project uses firebase to fetch items from a backend service. Later on, the cart
 is stored to localStorage. When the checkout is completed localStorage is emptied.
 
-## Styling
+## Webpack
 
 I used `styled-components` to create a css layout because it was fun and experimental. Removed totally 
 `css-modules` from the package to ensure consistency (so that this project always uses styled components and
 not sometimes one and other times the other).
+
+Also, to prevent `../../using/relative/like/this` I added a module alias to webpack: `@` which defaults to `src` folder.
+
+Used `prettier` to ensure consistency in coding style.
 
 ## Unit Tests
 This project includes two example unit tests. These unit tests can be found
