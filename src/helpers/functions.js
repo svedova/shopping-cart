@@ -8,9 +8,14 @@
 export const getTotal = ({ items, cart }) => {
   const total = items.reduce((prev, item) => {
     let sum = 0;
-    const quantity = cart[item.id];
+    let quantity = cart[item.id];
 
     if (quantity) {
+      // Make a discount
+      if (item.oneFreeEach) {
+        quantity = quantity - Math.floor(quantity / item.oneFreeEach);
+      }
+
       sum = item.discounted || item.price;
       sum = sum * quantity;
     }

@@ -132,6 +132,14 @@ const NumberOfItems = Styled.span`
   color: red;
 `;
 
+const OneFreeEach = Styled.span`
+  color: ${props.gray50};
+  display: block;
+  margin-left: ${props.marginM};
+  margin-top: ${props.marginS};
+  font-size: 0.8rem;
+`;
+
 class Item extends PureComponent {
   static defaultProps = {
     item: {},
@@ -198,7 +206,7 @@ class Item extends PureComponent {
 
     const { image } = this.state;
     const {
-      item: { title, brand, price, discount, discounted, id },
+      item: { title, brand, price, discount, discounted, id, oneFreeEach },
       cart
     } = this.props;
 
@@ -214,7 +222,10 @@ class Item extends PureComponent {
           {discounted && <Discount children={`CHF ${discounted}`} />}
         </PriceWrapper>
         <AddToCart className={"fas fa-cart-plus"} />
-        {discount >0 && <Sale>-%{discount}</Sale>}
+        {discount > 0 && <Sale>-%{discount}</Sale>}
+        {oneFreeEach > 0 && (
+          <OneFreeEach>*Every {oneFreeEach} {title} 1 is gratis</OneFreeEach>
+        )}
       </StyledItem>
     );
   }
