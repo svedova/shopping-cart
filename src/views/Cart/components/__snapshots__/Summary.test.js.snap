@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) Summary should match the snapshot for mapStateToProps 1`] = `
+Object {
+  "cart": Object {
+    "ids": Array [
+      "7sRCjMPmSX3XNgzn074v",
+      "7fovkddLybsCiOoV5jf7",
+      "LdKHLDJpnbZR04VuPxE5",
+      "Ft5wrWvYf0UrQf0G6Ahg",
+      "fzjeAkCkmNQHpPfZ5fdJ",
+      "uy4PC76zFiL808V2OdgQ",
+      "G1D8XDDwIChYUabzoUmE",
+    ],
+    "quantities": Object {
+      "7fovkddLybsCiOoV5jf7": 3,
+      "7sRCjMPmSX3XNgzn074v": 3,
+      "Ft5wrWvYf0UrQf0G6Ahg": 4,
+      "G1D8XDDwIChYUabzoUmE": 1,
+      "LdKHLDJpnbZR04VuPxE5": 3,
+      "fzjeAkCkmNQHpPfZ5fdJ": 3,
+      "uy4PC76zFiL808V2OdgQ": 2,
+    },
+  },
+  "items": Array [
+    Object {
+      "category": "fruit",
+      "discount": 0,
+      "id": "7fovkddLybsCiOoV5jf7",
+      "price": 0.25,
+      "title": "Apple",
+    },
+    Object {
+      "category": "fruit",
+      "discount": 15,
+      "discounted": 0.43,
+      "id": "7sRCjMPmSX3XNgzn074v",
+      "price": 0.5,
+      "title": "Papaya",
+    },
+    Object {
+      "brand": "Barilla",
+      "category": "dried pasta",
+      "id": "Ft5wrWvYf0UrQf0G6Ahg",
+      "price": 2,
+      "title": "Penne",
+    },
+    Object {
+      "brand": "Mister Rice",
+      "category": "rice",
+      "id": "G1D8XDDwIChYUabzoUmE",
+      "price": 1.5,
+      "title": "Jasmin",
+    },
+    Object {
+      "category": "fruit",
+      "id": "LdKHLDJpnbZR04VuPxE5",
+      "price": 0.3,
+      "title": "Orange",
+    },
+    Object {
+      "category": "fruit",
+      "discount": 10,
+      "discounted": 0.14,
+      "id": "fzjeAkCkmNQHpPfZ5fdJ",
+      "price": 0.15,
+      "title": "Banana",
+    },
+    Object {
+      "brand": "Tesco",
+      "category": "dried pasta",
+      "discount": 5,
+      "discounted": 1.66,
+      "id": "qvjW0xRluPKogdwYAXzf",
+      "price": "1.75",
+      "title": "Spaghetti",
+    },
+    Object {
+      "brand": "Barilla",
+      "category": "dried pasta",
+      "id": "uy4PC76zFiL808V2OdgQ",
+      "price": 2,
+      "title": "Spaghetti",
+    },
+  ],
+}
+`;
+
+exports[`(Component) Summary should mount 1`] = `"<div class=\\"sc-htoDjs ciqLhv\\"><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x3)</span>Papaya</div><div class=\\"sc-iwsKbI jkme\\">CHF 1.29</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x3)</span>Apple</div><div class=\\"sc-iwsKbI jkme\\">CHF 0.75</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x3)</span>Orange</div><div class=\\"sc-iwsKbI jkme\\">CHF 0.90</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x4)</span>Barilla, Penne</div><div class=\\"sc-iwsKbI jkme\\">CHF 8.00</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x3)</span>Banana</div><div class=\\"sc-iwsKbI jkme\\">CHF 0.42</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x2)</span>Barilla, Spaghetti</div><div class=\\"sc-iwsKbI jkme\\">CHF 4.00</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq hbtSjX\\"><div class=\\"sc-iwsKbI jkme\\"><span class=\\"sc-gZMcBi geLwpI\\">(x1)</span>Mister Rice, Jasmin</div><div class=\\"sc-iwsKbI jkme\\">CHF 1.50</div><div class=\\"sc-iwsKbI jkme\\"><div class=\\"fas fa-minus-circle sc-gqjmRU kwWzOp\\"></div></div></div><div class=\\"sc-dnqmqq fOyjxt\\">Subtotal: CHF 17.10</div><div class=\\"sc-dnqmqq fOyjxt\\">Discount: CHF 0.24</div><div class=\\"sc-dnqmqq fOyjxt\\">Total: CHF 16.86</div><div class=\\"sc-VigVT fbBmcQ\\"></div></div>"`;
