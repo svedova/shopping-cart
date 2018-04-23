@@ -20,12 +20,18 @@ Once installed you can visit [here](http://localhost:3000).
 This project uses firebase to fetch items from a backend service. Later on, the cart
 is stored to localStorage. When the checkout is completed localStorage is emptied.
 
+## Styling
+
+I used `styled-components` to create a css layout because it was fun and experimental. Removed totally 
+`css-modules` from the package to ensure consistency (so that this project always uses styled components and
+not sometimes one and other times the other).
+
 ## Unit Tests
 This project includes two example unit tests. These unit tests can be found
 under: 
 
 * `src/views/List/actions/list.test.js`
-* `src/views/Cart/components/Summary`.
+* `src/views/Cart/components/Summary.test.js`.
 
 Run `yarn test` to run the test suite.
 
