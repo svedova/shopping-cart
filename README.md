@@ -26,7 +26,7 @@ I used `styled-components` to create a css layout because it was fun and experim
 `css-modules` from the package to ensure consistency (so that this project always uses styled components and
 not sometimes one and other times the other).
 
-Also, to prevent `../../using/relative/like/this` I added a module alias to webpack: `@` which defaults to `src` folder.
+Also, to prevent `../../using/relative/paths/like/this` I added a module alias to webpack: `@` which defaults to `src` folder.
 
 Used `prettier` to ensure consistency in coding style.
 
