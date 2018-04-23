@@ -46,3 +46,4 @@ Run `yarn test` to run the test suite.
 ### Notes
 * This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 * The folder structured was inspired [by this article](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1).
+* Tested on Firefox, Chrome and Safari.
