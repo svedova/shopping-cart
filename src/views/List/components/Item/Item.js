@@ -214,7 +214,7 @@ class Item extends PureComponent {
           {discounted && <Discount children={`CHF ${discounted}`} />}
         </PriceWrapper>
         <AddToCart className={"fas fa-cart-plus"} />
-        {isNaN(+discount) === false && <Sale>-%{discount}</Sale>}
+        {discount >0 && <Sale>-%{discount}</Sale>}
       </StyledItem>
     );
   }
