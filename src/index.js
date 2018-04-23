@@ -12,7 +12,7 @@ const store = createStore(LocalStorage.get("cart", {}));
 const basename = process.env.NODE_ENV === "production" ? "/shopping-cart/" : "";
 
 ReactDOM.render(
-  <App routes={routes} store={store} basename={basename}/>,
+  <App routes={routes} store={store} basename={basename} />,
   document.getElementById("root")
 );
 

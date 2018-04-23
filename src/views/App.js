@@ -25,7 +25,7 @@ class App extends Component {
   static propTypes = {
     routes: PropTypes.array,
     store: PropTypes.object,
-    basename: PropTypes.string,
+    basename: PropTypes.string
   };
 
   render() {

@@ -25,7 +25,7 @@ class Items extends PureComponent {
     /**
      * Key-value pair of filters.
      */
-    filters: PropTypes.object,
+    filters: PropTypes.object
   };
 
   /**
@@ -39,9 +39,13 @@ class Items extends PureComponent {
       let clone = [...items];
 
       if (filters.sort === "+price") {
-        clone.sort((a, b) => (a.discounted || a.price) - +(b.discounted || b.price));
+        clone.sort(
+          (a, b) => (a.discounted || a.price) - +(b.discounted || b.price)
+        );
       } else if (filters.sort === "-price") {
-        clone.sort((a, b) => (b.discounted || b.price) - +(a.discounted || a.price));
+        clone.sort(
+          (a, b) => (b.discounted || b.price) - +(a.discounted || a.price)
+        );
       }
 
       if (filters.brand) {
@@ -52,7 +56,7 @@ class Items extends PureComponent {
     }
 
     return items;
-  }
+  };
 
   render() {
     const { fetched } = this.props;
